@@ -1,0 +1,100 @@
+body {  
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 500px;
+}
+
+textarea {
+    grid-column: span 4;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 32px;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.1s;
+    color: #333;
+}
+
+button:hover {
+    background-color: #8b8c89;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.operator {
+    background-color: #ff9f00;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #e67e22;
+}
+
+button.equals {
+    grid-column: span ;
+    background-color: #27ae60;
+    color: white;
+}
+
+button.equals:hover {
+    background-color: #2ecc71;
+}
+
+button.clear {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #c0392b;
+}
+
+button.delete {
+    background-color: #95a5a6;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #7f8c8d;
+}
